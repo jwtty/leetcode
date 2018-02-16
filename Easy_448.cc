@@ -7,6 +7,7 @@ public:
         for (int i = 0; i < n; ++i)
         {
             int index = abs(nums[i]) - 1;
+            // Use the most significant bit 1
             nums[index] = nums[index] > 0 ? -nums[index] : nums[index];
         }
         for (int i = 0; i < n; ++i)
